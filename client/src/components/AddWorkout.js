@@ -46,9 +46,9 @@ class AddWorkout extends React.Component {
     render() {
         
         return (
-            <div className="base-container" ref={this.props.containerRef}>
+            <div className="base-container container" ref={this.props.containerRef}>
                 <center>
-                    <Card style={{width: '50rem', marginTop: '8rem', background: 'rgba(233, 235, 236, 0.9)'}}>
+                    <Card className="col-lg-8 col-12 p-0" style={{ marginTop: '8rem', background: 'rgba(233, 235, 236, 0.9)'}}>
 
                     <h1 id='loginTitle'><b>Add new Workout</b></h1>
                     <div className="content">

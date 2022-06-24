@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import logo from '../img/LogoLight.png';
 import './style/NavBar.css'
 import {isUserLoggedIn} from "../Permissions";
+import Container from 'react-bootstrap/esm/Container';
 
 
 class NavBar extends React.Component {
@@ -34,8 +35,9 @@ class NavBar extends React.Component {
 
     render() {
         return (
-            <Navbar bg="dark" className='m-auto' variant="dark">
-
+            
+            <Navbar bg="dark" className='m-auto' variant="dark" expand="lg" collapseOnSelect >
+                <Container>
                 <Navbar.Brand href="#home" className="m-auto">
                     <img
                         src={logo}
@@ -44,7 +46,8 @@ class NavBar extends React.Component {
                         alt="WorkOut"
                     />
                 </Navbar.Brand>
-
+                <Navbar.Toggle aria-controls="navB" />
+                <Navbar.Collapse id="navB">
                 {isUserLoggedIn() ?
                     <Nav className="mr-auto">
                         <Link className="nav-bar-link" to="/home">Home</Link>
@@ -59,7 +62,12 @@ class NavBar extends React.Component {
                     </Nav>
                 }
 
+                </Navbar.Collapse>
+               
+                
+                </Container>
             </Navbar>
+
         );
     }
 }
