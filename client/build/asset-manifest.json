@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.adb08bd9.chunk.css",
+    "main.js": "/static/js/main.b9899ea4.chunk.js",
+    "main.js.map": "/static/js/main.b9899ea4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4bef3b12.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4bef3b12.js.map",
+    "static/css/2.74662cff.chunk.css": "/static/css/2.74662cff.chunk.css",
+    "static/js/2.910754fe.chunk.js": "/static/js/2.910754fe.chunk.js",
+    "static/js/2.910754fe.chunk.js.map": "/static/js/2.910754fe.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3ec44443ca4aa4bbaad4c76422fb5ef0.js": "/precache-manifest.3ec44443ca4aa4bbaad4c76422fb5ef0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.74662cff.chunk.css.map": "/static/css/2.74662cff.chunk.css.map",
+    "static/css/main.adb08bd9.chunk.css.map": "/static/css/main.adb08bd9.chunk.css.map",
+    "static/js/2.910754fe.chunk.js.LICENSE.txt": "/static/js/2.910754fe.chunk.js.LICENSE.txt",
+    "static/media/LogoLight.png": "/static/media/LogoLight.b6332f4e.png",
+    "static/media/background.jpg": "/static/media/background.046ddbaf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bef3b12.js",
+    "static/css/2.74662cff.chunk.css",
+    "static/js/2.910754fe.chunk.js",
+    "static/css/main.adb08bd9.chunk.css",
+    "static/js/main.b9899ea4.chunk.js"
+  ]
+}
