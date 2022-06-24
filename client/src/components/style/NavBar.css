@@ -1,0 +1,30 @@
+a:link{
+    text-decoration: none;
+    color:white;
+    transition: background-color 0.5s;
+}
+a:visited {
+    text-decoration: none;
+    color:white;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: #eeeeee;
+}
+
+.navbar-header {
+    /*background-color: #F16E10;*/
+    margin-left: 35%;
+}
+
+.nav-bar-link {
+    margin-right: 25px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#logo{
+    width:min(300px,70vw);
+}
