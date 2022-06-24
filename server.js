@@ -3,7 +3,7 @@ const path = require('path')
 const express = require('express')
 const { USERS_TABLE, WORKOUTS_TABLE } = require('./client/src/DatabaseTables')
 const app = express()
-const port = 8081
+const port = process.env.PORT || 8081
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname, './client/build'))); // Have Node serve the files for our built React app
 
