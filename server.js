@@ -3,7 +3,7 @@ const path = require('path')
 const express = require('express')
 const { USERS_TABLE, WORKOUTS_TABLE } = require('./client/src/DatabaseTables')
 const app = express()
-const port = process.env.PORT || 8081
+const port =  process.env.PORT || 8081
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname, './client/build'))); // Have Node serve the files for our built React app
 
@@ -20,14 +20,6 @@ var db_config = {
     database: "tbuATO0ZYa",
     insecureAuth: true
 }
-
-// var db_config = {
-//     host: "localhost",
-//     port: 3306,
-//     user: "user",
-//     password: "user",
-//     database: "web_project",
-// }
 
 
 var databaseConnection
@@ -206,46 +198,6 @@ app.post('/register', (req, res) => {
                 })
         })
 })
-
-// app.post('/getUserType', (req, res) => {
-//     console.log(`POST getUser ${req.body}`)
-
-//     if (req.body.ID === "" || req.body.Password === "") {
-//         res.status(400)
-//         res.send("Invalid User parameters.")
-//         return
-//     }
-
-//     const query = `SELECT * FROM ${USERS_TABLE.name} WHERE ${USERS_TABLE.columns.id} = ? AND ${USERS_TABLE.columns.password} = ?`
-//     databaseConnection.query(query, [req.body.ID, req.body.Password],
-//         (err, result) => {
-//             if (err) {
-//                 res.status(500)
-//                 res.send(err)
-//                 return
-//             }
-
-//             console.log(result.length === 0)
-//             if (result.length === 0) {
-//                 res.status(400)
-//                 res.send("Invalid User parameters.")
-//                 return
-//             }
-
-//             const resMsg = {
-//                 method: 'GET',
-//                 headers: {'Content-Type': 'application/json'},
-//                 body: JSON.stringify(
-//                     {
-//                         title: 'UserDetails',
-//                         loginResult: 'OK',
-//                     })
-//             }
-//             console.log(resMsg)
-//             res.type('application/json')
-//             res.send(resMsg)
-//         })
-// })
 
 app.listen(port, () => {
     console.log(`Workouts-app server listening on http://localhost:${port}`)
