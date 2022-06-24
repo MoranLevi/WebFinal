@@ -38,7 +38,7 @@ class MyWorkouts extends React.Component {
     render() {
         return (
             <container>
-<div className="MyWorkouts"  style={{ backgroundColor: '#FFFFFF'}}>
+<div className="MyWorkouts" >
                 <center>
                     <Card className="col-lg-8 col-12 p-0">
                         <Card.Body>

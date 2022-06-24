@@ -1,7 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { isUserLoggedIn } from "../Permissions";
-import Welcome from "./Welcome";
 
 export default function Home() {
           

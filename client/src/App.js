@@ -20,13 +20,18 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="App">
+            <div className="App" style={{
+                backgroundImage:`url(${background})`,
+                minHeight: "100vh",
+                backgroundPosition: "center",
+                backgroundSize: "cover"
+                }}>
 
                 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet" />
 
                 <Router>
                     <NavBar />
-                    <img src={background} style={{ position: 'absolute', width: '100vw', height: '100vh', repeat: 'no-repeat', left: 0, top: 0, bottom: 0, right: 0, zIndex: -1 }} />
+                    {/* <img src={background} style={{ position: 'absolute', width: '100vw', height: '100vh', repeat: 'no-repeat', left: 0, top: 0, bottom: 0, right: 0, zIndex: -1 }} /> */}
 
                     <Switch>
                         <Route exact path="/" component={Home} />

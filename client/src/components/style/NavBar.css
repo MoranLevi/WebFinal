@@ -24,3 +24,7 @@ a:hover {
     font-size: 20px;
     font-weight: 500;
 }
+
+#logo{
+    width:min(300px,70vw);
+}

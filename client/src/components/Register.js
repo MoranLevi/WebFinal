@@ -61,14 +61,8 @@ class Register extends React.Component {
             return d.toString();
         }
 
-        /**
-         * …and then create the method to output the date string as desired.
-         * Some people hate using prototypes this way, but if you are going
-         * to apply this to more than one Date object, having it as a prototype
-         * makes sense.
-         **/
-        Date.prototype.toMysqlFormat = function() {
-            return this.getUTCFullYear() + "-" + twoDigits(1 + this.getUTCMonth()) + "-" + twoDigits(this.getUTCDate()) + " " + twoDigits(this.getUTCHours()) + ":" + twoDigits(this.getUTCMinutes()) + ":" + twoDigits(this.getUTCSeconds());
+         function toMysqlFormat(d) {
+            return d.getUTCFullYear() + "-" + twoDigits(1 + d.getUTCMonth()) + "-" + twoDigits(d.getUTCDate()) + " " + twoDigits(d.getUTCHours()) + ":" + twoDigits(d.getUTCMinutes()) + ":" + twoDigits(d.getUTCSeconds());
         };
 
         const requestMsg = {
@@ -80,7 +74,7 @@ class Register extends React.Component {
                     username: this.state.username,
                     fullname: this.state.FullName,
                     password: this.state.password,
-                    bd: Birthday.toMysqlFormat()
+                    bd: toMysqlFormat(Birthday)
                 })
         };
 

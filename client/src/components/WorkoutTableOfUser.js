@@ -1,6 +1,5 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import { USERS_TABLE, WORKOUTS_TABLE } from '../DatabaseTables'
 
 
 class WorkoutTableOfUser extends React.Component {
@@ -18,7 +17,7 @@ class WorkoutTableOfUser extends React.Component {
                 <td>{col.WorkType}</td>
                 <td>{col.WorkDate.replace('T',' ')}</td>
                 <td><button onClick={async ()=>{
-                    const response = await fetch('/deleteUserWorkout', {
+                    await fetch('/deleteUserWorkout', {
                         method: 'POST',
                         headers: {'Content-Type': 'application/json'},
                         body: JSON.stringify({

@@ -1,13 +1,7 @@
-import React, {Component as Navbar} from 'react'
+import React from 'react'
 import {withRouter} from 'react-router-dom'
-import Register from './Register'
-import Login from './Login'
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 import './style/Welcome.css'
-import About from './About';
 import Home from './Home';
 
 

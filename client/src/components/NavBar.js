@@ -41,9 +41,9 @@ class NavBar extends React.Component {
                 <Navbar.Brand href="#home" className="m-auto">
                     <img
                         src={logo}
-                        width="300"
                         className="d-inline-block align-top"
                         alt="WorkOut"
+                        id='logo'
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navB" />
